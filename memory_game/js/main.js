@@ -24,6 +24,7 @@ var cards = [
 
 var cardsInPlay = [];
 
+
 var checkForMatch = function() {
 	if(cardsInPlay.length === 2) {
 		if(cardsInPlay[0] === cardsInPlay[1]) {
@@ -33,7 +34,7 @@ var checkForMatch = function() {
 		alert("Sorry try again");
 		}
 	}
-} 
+}; 
 
 var flipCard = function() {
 	var cardId = this.getAttribute("data-id");
@@ -43,7 +44,7 @@ var flipCard = function() {
 	checkForMatch();
 	console.log(cards[cardId].image);
 	console.log(cards[cardId].suit);
-}
+};
 
 var createBoard = function() {
 	for(var i = 0; i < cards.length; i++) {
@@ -55,7 +56,10 @@ var createBoard = function() {
 	}
 };
 
+
 createBoard();
+
+
 
 
 
